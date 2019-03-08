@@ -16,7 +16,7 @@ const slack = new Slackbot({ botToken: token }).listen()
  * 23:23, 11:11, 10:10 PM
  * 1 pm est, 15:20 MSK, 12 am UTC
  */
-const TIME_RX = /(^|[ ])[1-9]\d?(([:]\d{2}([ ]?(AM|PM)?))|([ ]?(AM|PM)))/i
+const TIME_RX = /(^|[ ])\d?\d(([:]\d{2}([ ]?(AM|PM)?))|([ ]?(AM|PM)))/i
 const TIMEZONE_RX = /(PST|EST|GMT|UTC|CET|MSK)/i
 const TIMEZONE_ABBR = {"PST":"America/Los_Angeles",
                        "EST":"America/New_York",
